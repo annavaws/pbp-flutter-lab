@@ -122,7 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      // floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      
       floatingActionButton: Container(
         margin: const EdgeInsets.only(left:50, right:20, bottom: 10, ),
         
@@ -130,21 +130,21 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children:<Widget>[
             
+            // button decrement
             FloatingActionButton(
               onPressed: _decrementCounter,
               tooltip: 'Decrement',
               child: const Icon(Icons.remove),
             ),
+
+            // button increment
             FloatingActionButton(
               onPressed: _incrementCounter,
               tooltip: 'Increment',
-              
               child: const Icon(Icons.add),
-              
             ),
             
-              
-        
+            
 
         ],)
         
