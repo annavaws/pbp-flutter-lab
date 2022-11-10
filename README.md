@@ -35,7 +35,7 @@ final val = datetime.datetime.now();
 
 5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 - Membuat aplikasi dengan command flutter create counter_7
-- Menambahkan fungsi _decrementCounter, yang akan mengdecrement counternya 
+- Menambahkan fungsi _decrementCounter, yang akan mengdecrement counternya. Nilai tidak akan pernah minus
 - Menambahkan fungsi if else untuk kasus genap dan ganjil, %2 != 0 artinya saat ganjil, begitu sebaliknya
 - Menambahkan inline style text color blue untuk ganjil dan red untuk genap
 - Untuk button, menggunakan Container yang didalamnya memiliki row untuk menampilkan kedua buttonnya.

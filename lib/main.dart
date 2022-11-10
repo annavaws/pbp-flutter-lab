@@ -6,7 +6,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -63,7 +62,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _decrementCounter(){
     setState((){
-      _counter--;
+      if (_counter > 0){
+        _counter--;
+      }
     });
   }
 
@@ -102,6 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+           
             if (_counter%2 != 0)...[
               Text(
                 'GANJIL',
@@ -131,12 +133,13 @@ class _MyHomePageState extends State<MyHomePage> {
             children:<Widget>[
             
             // button decrement
+            
             FloatingActionButton(
               onPressed: _decrementCounter,
               tooltip: 'Decrement',
               child: const Icon(Icons.remove),
             ),
-
+            
             // button increment
             FloatingActionButton(
               onPressed: _incrementCounter,
