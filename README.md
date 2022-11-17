@@ -1,4 +1,4 @@
-Tugas 7
+<h2>Tugas 7</h2>
 
 1. Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
 Perbedaannya dapat dilihat dari kedua definisinya.
@@ -32,7 +32,7 @@ Fungsi dari setState() adalah untuk mengupdate UI secara dinamis setiap dipanggi
 4. Jelaskan perbedaan antara const dengan final.
 Perbedaannya adalah saat penginisiasi nilai pada variabel, untuk const harus dinisiasi pada saat kompilasi, sedangkan final tidak mengharuskan memiliki nilai ekspilisit pada saat kompilasi.
 Contohnya 
-const val = 21;
+const val = 21; <br>
 final val = datetime.datetime.now();
 
 5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
@@ -42,7 +42,7 @@ final val = datetime.datetime.now();
 - Menambahkan inline style text color blue untuk ganjil dan red untuk genap
 - Untuk button, menggunakan Container yang didalamnya memiliki row untuk menampilkan kedua buttonnya.
 
-Tugas 8
+<h2>Tugas 8</h2>
 1. Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
 Perbedaannya adalah jika menggunakan .push maka kita meng-push new route ke stack sehingga masih bisa kembali  <br> ke halaman sebelumnya, sedangkan .pushReplacement kita mengganti page sekarang dengan yang diinginkan  <br> sehingga tidak memungkinan untuk kembali ke halaman sebelumnya.
 

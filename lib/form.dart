@@ -181,7 +181,8 @@ class _MyFormPageState extends State<MyFormPage> {
                         builder: (context) {
                           data.listData
                               .add(data.Data(_judul, nominal, tipeBudget));
-
+                          
+                        
                           return Dialog(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10),
