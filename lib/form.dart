@@ -73,7 +73,7 @@ class _MyFormPageState extends State<MyFormPage> {
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
                     decoration: InputDecoration(
-                      hintText: "Contoh: Biaya Makanan",
+                      hintText: "Contoh: Sate Pacil",
                       labelText: "Judul",
 
                       // Menambahkan circular border agar lebih rapi
@@ -106,7 +106,8 @@ class _MyFormPageState extends State<MyFormPage> {
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
                       decoration: InputDecoration(
-                          hintText: 'Nominal',
+                          hintText: "Contoh: 10000",
+                          labelText: 'Nominal',
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(5.0))),
                       onChanged: (String? value) {
@@ -126,8 +127,9 @@ class _MyFormPageState extends State<MyFormPage> {
                         return null;
                       }),
                 ),
-                ListTile(
-                  trailing: DropdownButton(
+                SizedBox(
+                  width: 150,
+                  child:  DropdownButtonFormField(
                     value: tipeBudget,
                     icon: const Icon(Icons.keyboard_arrow_down),
                     items: listTipeBudget.map((String items) {
@@ -141,15 +143,17 @@ class _MyFormPageState extends State<MyFormPage> {
                         tipeBudget = newValue!;
                       });
                     },
-                    // validator: (newValue) {
-                    // if (newValue == 'Pilih Jenis') {
-                    //   return 'Jenis Budget tidak boleh kosong!';
-                    // }
-                    // return null;
+                    validator: (newValue) {
+                    if (newValue == 'Pilih Jenis') {
+                      return 'Jenis Budget tidak boleh kosong!';
+                    }
+                    return null;
 
-                    // }
+                    }
                   ),
+                
                 ),
+               
                 Container(
                   margin:  const EdgeInsets.only(
                     bottom: 0,

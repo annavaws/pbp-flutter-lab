@@ -50,7 +50,7 @@ class _MyDataDataState extends State<MyDataPage> {
                 margin: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                     border: Border.all(color: Colors.grey),
-                    borderRadius: BorderRadius.circular(2)),
+                    borderRadius: BorderRadius.circular(5)),
                 child: Padding(
                     padding: EdgeInsets.all(10),
                     child: Column(children: [
@@ -61,7 +61,7 @@ class _MyDataDataState extends State<MyDataPage> {
                             child: Text(
                               item.judul,
                               style: TextStyle(
-                                fontSize: 20.0,
+                                fontSize: 25.0,
                               ),
                             )),
                       ),
@@ -71,8 +71,10 @@ class _MyDataDataState extends State<MyDataPage> {
                           child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text('${item.nominal}'),
-                                Text(item.tipeBudget)
+                                Text('${item.nominal}',
+                                style: TextStyle(fontSize:15,),),
+                                Text(item.tipeBudget,
+                                style: TextStyle(fontSize:15,),),
                               ]))
                     ])))
         ]));

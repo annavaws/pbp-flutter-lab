@@ -44,10 +44,16 @@ final val = datetime.datetime.now();
 
 Tugas 8
 1. Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
-Perbedaannya adalah jika menggunakan .push maka kita meng-push new route ke stack sehingga masih bisa kembali ke halaman sebelumnya, sedangkan .pushReplacement kita mengganti page sekarang dengan yang diinginkan sehingga tidak memungkinan untuk kembali ke halaman sebelumnya.
+Perbedaannya adalah jika menggunakan .push maka kita meng-push new route ke stack sehingga masih bisa kembali  <br> ke halaman sebelumnya, sedangkan .pushReplacement kita mengganti page sekarang dengan yang diinginkan  <br> sehingga tidak memungkinan untuk kembali ke halaman sebelumnya.
 
 2. Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
-
+- Form  -> untuk membuat form pada aplikasi <br>
+- DropdownButtonFormField -> menampilkan dropdown list, alasan tidak menggunakan DropDownButton karena tidak bisa menggunakan validator <br>
+- Drawer -> untuk menampilkan menu pada aplikasi biasa secara tersembunyi biasa terdapat di bagian kanan atau kiri <br>
+- TextFormField -> berfungsi untuk mengambil input dari user <br>
+- ListTile ->  membentuk suatu list yang berisi widget-widget di dalamnya <br>
+- ListView -> merupakan widget yang dapat di-scroll dan menampilkan berbagai widget di dalamnya <br>
+- TextButton -> merupakan button yang dapat diklik dengan default tanpa border <br>
 
 
 3. Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed).

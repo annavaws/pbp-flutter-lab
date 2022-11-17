@@ -1,5 +1,3 @@
-library counter_7.data;
-
 class Data {
   String judul;
   int nominal;
