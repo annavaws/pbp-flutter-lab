@@ -1,3 +1,5 @@
+Tugas 7
+
 1. Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
 Perbedaannya dapat dilihat dari kedua definisinya.
 Stateless widget adalah widget statis yang valuenya sudah diinisiasi sejak awal dan tidak dapat diubah lagi.
@@ -39,3 +41,26 @@ final val = datetime.datetime.now();
 - Menambahkan fungsi if else untuk kasus genap dan ganjil, %2 != 0 artinya saat ganjil, begitu sebaliknya
 - Menambahkan inline style text color blue untuk ganjil dan red untuk genap
 - Untuk button, menggunakan Container yang didalamnya memiliki row untuk menampilkan kedua buttonnya.
+
+Tugas 8
+1. Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
+Perbedaannya adalah jika menggunakan .push maka kita meng-push new route ke stack sehingga masih bisa kembali ke halaman sebelumnya, sedangkan .pushReplacement kita mengganti page sekarang dengan yang diinginkan sehingga tidak memungkinan untuk kembali ke halaman sebelumnya.
+
+2. Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+
+
+
+3. Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed).
+- Event OnPressed -> saat suatu widget ditekan
+- Event OnLongPress -> saat suatu widget ditekan lebih lama
+- Event OnSaved -> saat ingin melakukan penyimpanan data dari form
+- Event OnChange -> saat ada value yang berubah 
+
+4. Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.
+Cara kerja navigator adalah seperti stack yang berisi page-page. Jadi ketika kita membuka route baru, maka akan di push ke stack yaitu page sekarang berada di stack paling atas. Ketika kita menekan tombol back, maka stack tersebut akan di pop yaitu menghilangkan route paling atas. Dan yang akan dimunculkan sekarang adalah halaman sebelumnya, yang sekarang merupakan top of the stack.
+
+5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+- Menambahkan drawer pada tiap page, pada counter_7, Tambah Budget, dan Data Budget
+- Membuat halaman form pada form.dart, dan mengimplementasikan semua elemen inputnya yaitu judul berupa String, nominal berupa int, ada tipe budget berupa dropdown, dan terakhir ada tombol sumbit
+- Untuk menyimpan semua data dari field menggunakan list listData yang berisi object Data pada data.dart
+- Terakhir untuk halaman data budget, dibuat pada file budget.dart. Melakukan looping untuk mengambil data dari listData dan menampilkannya.
