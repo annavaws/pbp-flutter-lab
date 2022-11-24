@@ -70,3 +70,24 @@ Cara kerja navigator adalah seperti stack yang berisi page-page. Jadi ketika kit
 - Membuat halaman form pada form.dart, dan mengimplementasikan semua elemen inputnya yaitu judul berupa String, nominal berupa int, ada tipe budget berupa dropdown, dan terakhir ada tombol sumbit
 - Untuk menyimpan semua data dari field menggunakan list listData yang berisi object Data pada data.dart
 - Terakhir untuk halaman data budget, dibuat pada file budget.dart. Melakukan looping untuk mengambil data dari listData dan menampilkannya.
+
+<h2>Tugas 9</h2>
+1. Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Kita dapat mengambil data JSON tanpa membuat model terlebih dahulu seperti, tetapi hal ini tidak dianjurkan karena deklarasi type menjadi tidak berguna dan saat pengambilan data akan menjadi tidak efisien.
+
+2. Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+- GestureDetector untuk mendetect adanya gesture<br>
+- ListTile untuk membentuk suatu list yang berisi widget-widget di dalamnya<br>
+- FutureBuilder untuk menampilkan data dari Future respons<br>
+- RichText untuk menampilkan paragraph<br>
+- SizedBox untuk membuat box dalam ukuran tertentu dan berisi widget lainnya<br>
+- Sisanya sama seperti tugas sebelumnya
+
+3. Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+Membuat suatu model Watchlist, lalu fetch JSON dari API, kemudian data JSON tersebut disimpan dalam bentuk model Watchlist, terakhir kita menampilkannya ke widget yang diinginkan.
+
+4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+- Menambahkan drawer untuk watchlist ke tiap page
+- Membuat model Watchlist, dengan memanfaatkan web QuickType
+- Membuat page untuk menampilkan list judul dari Watchlist pada watchlist_page.dart
+- Membuat routing ke page untuk menampilkan detailnya pada details.dart
